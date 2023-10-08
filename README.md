@@ -2,7 +2,7 @@
 
 Website where you can find and book short- and long-term homestays and experiences all over the world.
 
-**Demo:** [js-react-developer-project-12-production-bbf1.up.railway.app](https://js-react-developer-project-12-production-bbf1.up.railway.app)
+**Demo:** [https://next-book-app.vercel.app/](https://next-book-app.vercel.app/)
 
 Features:
 
@@ -26,17 +26,22 @@ git clone https://github.com/bushnastyaa/next-booking-app.git
 npm i
 ```
 
-```shell
-# Setup .env file
+Setup .env file
+
+```js
 DATABASE_URL=
 NEXTAUTH_SECRET=
 ```
 
-```shell
-# Setup Prisma
-npx prisma db push
+Setup Prisma
 
-# Run the app
+```shell
+npx prisma db push
+```
+
+Run the app
+
+```shell
 npm run dev
 ```
 

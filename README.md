@@ -26,23 +26,17 @@ git clone https://github.com/bushnastyaa/next-booking-app.git
 npm i
 ```
 
-**Setup .env file**
-
-```js
+```shell
+# Setup .env file
 DATABASE_URL=
 NEXTAUTH_SECRET=
 ```
 
-**Setup Prisma**
-
 ```shell
+# Setup Prisma
 npx prisma db push
 
-```
-
-**Run the app**
-
-```shell
+# Run the app
 npm run dev
 ```
 

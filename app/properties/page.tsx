@@ -9,6 +9,8 @@ interface PropertiesProps {
   searchParams: PropertiesParams
 };
 
+export const dynamic = 'force-dynamic'
+
 export default async function Properties ({ searchParams }: PropertiesProps) {
   const currentUser = await getCurrentUser();
   const data = await getProperties(searchParams);

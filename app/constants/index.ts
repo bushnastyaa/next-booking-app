@@ -101,10 +101,10 @@ export const footerLinks = [
   {
     title: "Socials",
     links: [
+      { title: "Vkontakte", url: "/" },
+      { title: "Telegram", url: "/" },
       { title: "Discord", url: "/" },
-      { title: "Instagram", url: "/" },
       { title: "Twitter", url: "/" },
-      { title: "Facebook", url: "/" },
     ],
   },
 ];

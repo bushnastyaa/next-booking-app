@@ -110,10 +110,6 @@ const PropertyClient = ({ reservations = [], property, currentUser }: PropertyCl
     <div className="max-md:px-5 w-full max-w-[1160px] mx-auto">
       <div className="flex flex-col gap-1 relative">
         <h1 className="text-2xl font-bold">{property.name}</h1>
-        <button className="p-2 text-white bg-[#0071c2] rounded-md 
-        max-md:w-full absolute top-0 right-0 max-md:hidden">
-          Reserve or Book now
-        </button>
         <div className="flex items-center gap-2">
           <FaLocationDot className="h-4 w-4" />
           <span>{property.location}, {property.address}</span>

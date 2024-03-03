@@ -89,7 +89,12 @@ const BookingCard = () => {
         <div className="flex justify-between mt-5 max-lg:gap-7 max-lg:flex-col">
           <div className="flex gap-3">
             <BsCursor className="h-5 w-5 mt-1 text-gray-400" />
-            <div className="flex flex-col">
+            <div 
+              className="flex flex-col" 
+              onClick={() => { 
+                setOpenDate(false) 
+                setOpenOptions(false)
+              }}>
               <label htmlFor="location" className="text-lg font-bold">Location</label>
               <Selector
                 onChange={(value) => setLocation(value)}
@@ -135,7 +140,9 @@ const BookingCard = () => {
                 }}
                 className="text-sm text-gray-400 relative z-0 cursor-pointer"
               >
-                {guestCount} guests · {roomCount} rooms · {bathroomCount} bathrooms
+                {guestCount} guest{guestCount > 1 ? "s" : "" } · {" "}
+                {roomCount} room{roomCount > 1 ? "s" : "" } ·  {" "}
+                {bathroomCount} bathroom{bathroomCount > 1 ? "s" : "" }
               </span>
               {openOptions && (
                 <div className="absolute top-[9rem] max-lg:top-[19rem]

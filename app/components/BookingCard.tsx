@@ -140,9 +140,9 @@ const BookingCard = () => {
                 }}
                 className="text-sm text-gray-400 relative z-0 cursor-pointer"
               >
-                {guestCount} guest{guestCount > 1 ? "s" : "" } · {" "}
-                {roomCount} room{roomCount > 1 ? "s" : "" } ·  {" "}
-                {bathroomCount} bathroom{bathroomCount > 1 ? "s" : "" }
+                {guestCount} guest{Number(guestCount) > 1 ? "s" : "" } · {" "}
+                {roomCount} room{Number(roomCount) > 1 ? "s" : "" } ·  {" "}
+                {bathroomCount} bathroom{Number(bathroomCount) > 1 ? "s" : "" }
               </span>
               {openOptions && (
                 <div className="absolute top-[9rem] max-lg:top-[19rem]
